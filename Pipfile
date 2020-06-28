@@ -9,6 +9,7 @@ verify_ssl = true
 django = "*"
 pylint-django = "*"
 markdown = "*"
+gunicorn = {index = "https://pypi.tuna.tsinghua.edu.cn/simple/", version = "*"}
 
 [requires]
 python_version = "3.8"
