@@ -9,8 +9,8 @@ verify_ssl = true
 django = "*"
 pylint-django = "*"
 markdown = "*"
-gunicorn = {index = "https://pypi.tuna.tsinghua.edu.cn/simple/", version = "*"}
-whitenoise = {index = "https://pypi.tuna.tsinghua.edu.cn/simple/", version = "*"}
+gunicorn = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.8"
