@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "0e8d741b465091ce789d81d88a83f35918df7549899a02ec3c3e83d9a1f2c31f"
+            "sha256": "2a68165f15e4c6165c25bf19f4b4e072578a6e12f4f08331725d987494eaa3fd"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -150,6 +150,14 @@
                 "sha256:bda89d5935c2eac546d648028b9901107a595863cb36bae0c73ac804a9b4ce88"
             ],
             "version": "==0.10.1"
+        },
+        "whitenoise": {
+            "hashes": [
+                "sha256:60154b976a13901414a25b0273a841145f77eb34a141f9ae032a0ace3e4d5b27",
+                "sha256:6dd26bfda3af29177d8ab7333a0c7b7642eb615ce83764f4d15a9aecda3201c4"
+            ],
+            "index": "https://pypi.tuna.tsinghua.edu.cn/simple/",
+            "version": "==5.1.0"
         },
         "wrapt": {
             "hashes": [
