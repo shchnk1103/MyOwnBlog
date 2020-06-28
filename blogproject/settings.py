@@ -25,7 +25,7 @@ SECRET_KEY = '4$%ag+-!zb9dn$%z41#_hzh$)6rxd9kxs04qft+nh26o4%cv2z'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', '.bbblog.website']
+ALLOWED_HOSTS = ['127.0.0.1', '.bbblog.website', 'localhost']
 
 
 # Application definition
