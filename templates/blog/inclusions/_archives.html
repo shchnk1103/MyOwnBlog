@@ -5,6 +5,7 @@
       <li>
         <a href="{% url 'blog:archive' date.year date.month %}">
           {{ date.year }} 年 {{ date.month }} 月
+          <span class="post-count">( {{ date.num_posts }} ) 篇</span>
         </a>
       </li>
     {% empty %}
