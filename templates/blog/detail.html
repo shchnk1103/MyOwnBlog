@@ -2,18 +2,26 @@
 {% load comments_extras %}
 
 {% block main %}
+
 <article class="post post-{{ post_detail.pk }}">
     <header class="entry-header">
         <h1 class="entry-title">{{ post_detail.title }}</h1>
         <div class="entry-meta">
+
             <span class="post-category"><a href="#">{{ post_detail.category.name }}</a></span>
+
             <span class="post-date"><a href="#"><time class="entry-date"
                         datetime="{{ post_detail.created_time }}">{{ post_detail.created_time }}</time></a></span>
+
             <span class="post-author"><a href="#">{{ post_detail.author }}</a></span>
+
             <span class="comments-link"><a href="#comment-area">{{ post_detail.comment_set.count }} 评论</a></span>
-            <span class="views-count"><a href="#">588 阅读</a></span>
+
+            <span class="views-count"><a href="#">{{ post_detail.views }} 阅读</a></span>
+            
         </div>
     </header>
+
     <div class="entry-content clearfix">
         {{ post_detail.body|safe }}
     </div>
@@ -31,6 +39,7 @@
 {% endblock %}
 
 {% block toc %}
+
 {% if post_detail.toc %}
     <div class="widget widget-content">
         <h3 class="widget-title">文章目录</h3>
@@ -41,4 +50,5 @@
         </div>
     </div>
 {% endif %}
+
 {% endblock %}

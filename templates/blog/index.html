@@ -1,7 +1,9 @@
 {% extends 'base.html' %}
 
 {% block main %}
+
     {% for post in post_list %}
+
         <article class="post post-{{ post.pk }}">
             <header class="entry-header">
                 <h1 class="entry-title">
@@ -37,7 +39,7 @@
 
                     <span class="views-count">
                         <a href="#">
-                            588 阅读
+                            {{ post.views }} 阅读
                         </a>
                     </span>
 
@@ -50,8 +52,11 @@
                 </div>
             </div>
         </article>
+
     {% empty %}
+
         <div class="no-post">暂时还没有发布的文章！</div>
+        
     {% endfor %}
 
     <!-- 简单分页效果
