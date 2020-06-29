@@ -15,6 +15,7 @@ whitenoise = "*"
 dj-database-url = "*"
 dj-static = "*"
 faker = "*"
+django-pure-pagination = "*"
 
 [requires]
 python_version = "3.8"
