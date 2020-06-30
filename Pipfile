@@ -20,6 +20,7 @@ django-haystack = "*"
 elasticsearch2 = "*"
 requests = "*"
 elasticsearch = "==2.4.1"
+self = "*"
 
 [requires]
 python_version = "3.8"

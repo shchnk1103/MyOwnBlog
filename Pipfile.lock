@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "9c1fb356cb01d32ca15d0360af78969c9b97c1c76a76a9b45a337cff5900c999"
+            "sha256": "869e3a318c0853f2810e9d4e9ce131b507b9bcf37496c635dcf371cc65154862"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -45,6 +45,13 @@
                 "sha256:fc323ffcaeaed0e0a02bf4d117757b98aed530d9ed4531e3e15460124c106691"
             ],
             "version": "==3.0.4"
+        },
+        "decorator": {
+            "hashes": [
+                "sha256:41fa54c2a0cc4ba648be4fd43cff00aedf5b9465c9bf18d64325bc225f08f760",
+                "sha256:e3a62f0520172440ca0dcc823749319382e377f37f140a0b99ef45fecb84bfe7"
+            ],
+            "version": "==4.4.2"
         },
         "dj-database-url": {
             "hashes": [
@@ -173,6 +180,12 @@
             ],
             "version": "==0.6.1"
         },
+        "public": {
+            "hashes": [
+                "sha256:e1436a8a99693a9849dfe40b9158f3837b7c309c163b2d3f5b8e9fce23876db1"
+            ],
+            "version": "==2019.4.13"
+        },
         "pylint": {
             "hashes": [
                 "sha256:7dd78437f2d8d019717dbf287772d0b2dbdfd13fc016aa7faa08d67bccc46adc",
@@ -218,6 +231,13 @@
             ],
             "index": "pypi",
             "version": "==2.24.0"
+        },
+        "self": {
+            "hashes": [
+                "sha256:1424691f67a308465c791884d1c093d9122d9920ff42a38e21a54f6beefaa1d0"
+            ],
+            "index": "pypi",
+            "version": "==2019.4.13"
         },
         "six": {
             "hashes": [
