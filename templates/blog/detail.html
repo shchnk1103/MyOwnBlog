@@ -23,8 +23,9 @@
     </header>
 
     <div class="entry-content clearfix">
-        {{ post_detail.body|safe }}
+        {{ post_detail.body_html|safe }}
     </div>
+
 </article>
 
 <section class="comment-area" id="comment-area">
