@@ -24,11 +24,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70dbbad8-62cd-44db-979f-16bc82812e74" name="Default Changelist" comment="">
+    <list default="true" id="70dbbad8-62cd-44db-979f-16bc82812e74" name="Default Changelist" comment="Coverage.py 统计测试覆盖率">
       <change afterPath="$PROJECT_DIR$/.coveragerc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,8 +189,16 @@
       <workItem from="1593515582839" duration="1076000" />
       <workItem from="1593516671435" duration="36000" />
       <workItem from="1593516715905" duration="133000" />
-      <workItem from="1593516857353" duration="2017000" />
+      <workItem from="1593516857353" duration="4006000" />
     </task>
+    <task id="LOCAL-00001" summary="Coverage.py 统计测试覆盖率">
+      <created>1593519024914</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1593519024915</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -207,6 +215,10 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Coverage.py 统计测试覆盖率" />
+    <option name="LAST_COMMIT_MESSAGE" value="Coverage.py 统计测试覆盖率" />
   </component>
   <component name="WindowStateProjectService">
     <state x="362" y="227" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593518604567">
@@ -233,6 +245,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="292" y="80" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1593517053382" />
+    <state x="219" y="112" key="Vcs.Push.Dialog.v2" timestamp="1593519028581">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="219" y="112" key="Vcs.Push.Dialog.v2/0.23.1440.826@0.23.1440.826" timestamp="1593519028581" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/MyOwnBlog$Test__blog_tests_test_models_CategoryModelTestCase.coverage" NAME="Test: blog.tests.test_models.CategoryModelTestCase Coverage Results" MODIFIED="1593516336047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />

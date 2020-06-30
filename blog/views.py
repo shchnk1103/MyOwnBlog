@@ -10,7 +10,7 @@ from django.views.generic import DetailView, ListView
 from markdown.extensions.toc import TocExtension
 from pure_pagination import PaginationMixin
 
-from .models import Category, Post, Tag
+from .models import Category, Post, Tag, generate_rich_content
 
 
 class IndexView(PaginationMixin, ListView):
@@ -45,16 +45,7 @@ class PostDetailView(DetailView):
         # 覆写 get_object 方法的目的是因为需要对 post 的 body 值进行渲染
         post = super().get_object(queryset=None)
 
-        md = markdown.Markdown(extensions=[
-            'markdown.extensions.extra',
-            'markdown.extensions.codehilite',
-            TocExtension(slugify=slugify),
-        ])
-        post.body = md.convert(post.body)
-
-        m = re.search(
-            r'<div class="toc">\s*<ul>(.*)</ul>\s*</div>', md.toc, re.S)
-        post.toc = m.group(1) if m is not None else ''
+        generate_rich_content(post.body)
 
         return post
 
