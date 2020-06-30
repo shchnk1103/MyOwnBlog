@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 'haystack',
     'blog.apps.BlogConfig',  # 注册 blog 应用
     'comments.apps.CommentsConfig',  # 注册 comments 应用
     'pure_pagination',  # 分页
@@ -135,3 +136,16 @@ PAGINATION_SETTINGS = {
     'MARGIN_PAGES_DISPLAYED': 2,  # 分页条开头和结尾显示的页数
     'SHOW_FIRST_PAGE_WHEN_INVALID': True,  # 当请求了不存在页，显示第一页
 }
+
+# # 搜索设置
+# HAYSTACK_CONNECTIONS = {
+#     'default': {
+#         'ENGINE': 'haystack.backends.elasticsearch2_backend.Elasticsearch2SearchEngine',
+#         'URL': 'http://127.0.0.1:9200/',
+#         'INDEX_NAME': 'MyOwnBlog',
+#     },
+# }
+# # 设置为每 10 项结果为一页
+# HAYSTACK_SEARCH_RESULTS_PER_PAGE = 10
+# # 作用是每当有文章更新时就更新索引
+# HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'

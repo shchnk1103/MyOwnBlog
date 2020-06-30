@@ -16,6 +16,10 @@ dj-database-url = "*"
 dj-static = "*"
 faker = "*"
 django-pure-pagination = "*"
+django-haystack = "*"
+elasticsearch2 = "*"
+requests = "*"
+elasticsearch = "==2.4.1"
 
 [requires]
 python_version = "3.8"
