@@ -25,13 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70dbbad8-62cd-44db-979f-16bc82812e74" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/comments/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comments/tests/base.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comments/tests/test_models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comments/tests/test_templatetags.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/comments/tests/test_views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.coveragerc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -192,7 +189,7 @@
       <workItem from="1593515582839" duration="1076000" />
       <workItem from="1593516671435" duration="36000" />
       <workItem from="1593516715905" duration="133000" />
-      <workItem from="1593516857353" duration="1108000" />
+      <workItem from="1593516857353" duration="2017000" />
     </task>
     <servers />
   </component>
@@ -212,6 +209,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="362" y="227" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1593518604567">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="362" y="227" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.826@0.23.1440.826" timestamp="1593518604567" />
     <state width="1398" height="249" key="GridCell.Tab.0.bottom" timestamp="1593516661329">
       <screen x="0" y="23" width="1440" height="826" />
     </state>

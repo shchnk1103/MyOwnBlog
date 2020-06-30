@@ -5,6 +5,7 @@ verify_ssl = true
 
 [dev-packages]
 fabric = {index = "https://pypi.tuna.tsinghua.edu.cn/simple/", version = "*"}
+coverage = "*"
 
 [packages]
 django = "*"
