@@ -1,8 +1,10 @@
 import re
 
 import markdown
+from django.contrib import messages
+from django.db.models import Q
 from django.http import HttpResponse
-from django.shortcuts import get_object_or_404, render
+from django.shortcuts import get_object_or_404, redirect, render
 from django.utils.text import slugify
 from django.views.generic import DetailView, ListView
 from markdown.extensions.toc import TocExtension
@@ -84,3 +86,20 @@ class TagView(IndexView):
     def get_queryset(self):
         tag = get_object_or_404(Tag, pk=self.kwargs.get('pk'))
         return super(TagView, self).get_queryset().filter(tags=tag)
+
+
+def search(request):
+    # 获取到用户提交的搜索关键词
+    q = request.GET.get('q')
+
+    if not q:
+        error_message = "请输入搜索关键词"
+        messages.add_message(request, messages.ERROR,
+                             error_message, extra_tags='danger')
+        return redirect('blog:index')
+
+    # Q 对象用于包装查询表达式，其作用是为了提供复杂的查询逻辑
+    # 即 title 中包含（contains）关键字 q，前缀 i 表示不区分大小写
+    post_list = Post.objects.filter(
+        Q(title__icontains=q) | Q(body__icontains=q))
+    return render(request, 'blog/index.html', {'post_list': post_list})
