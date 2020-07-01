@@ -18,6 +18,8 @@
             <span class="comments-link"><a href="#comment-area">{{ post_detail.comment_set.count }} 评论</a></span>
 
             <span class="views-count"><a href="#">{{ post_detail.views }} 阅读</a></span>
+
+            <span class="delete"><a href="#" onclick="confirm_delete()">删除文章</a></span>
             
         </div>
     </header>
@@ -36,6 +38,24 @@
       {% show_comments post_detail %}
     </div>
 </section>
+
+<script>
+    // 删除文章的函数
+    function confirm_delete() {
+        // 调用layer弹窗组件
+        layer.open({
+            // 弹窗标题
+            title: "确认删除",
+            // 正文
+            content: "确认删除这篇文章吗？",
+            // 点击确定按钮后调用的回调函数
+            yes: function(index, layero) {
+                // 指定应当前往的 url
+                location.href='{% url 'blog:delete' post_detail.id %}'
+            },
+        })
+    }
+</script>
 
 {% endblock %}
 

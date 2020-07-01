@@ -1,15 +1,12 @@
-import re
-
-import markdown
 from django.contrib import messages
+from django.contrib.auth.models import User
 from django.db.models import Q
 from django.http import HttpResponse
 from django.shortcuts import get_object_or_404, redirect, render
-from django.utils.text import slugify
 from django.views.generic import DetailView, ListView
-from markdown.extensions.toc import TocExtension
 from pure_pagination import PaginationMixin
 
+from .forms import PostForm
 from .models import Category, Post, Tag, generate_rich_content
 
 
@@ -79,6 +76,7 @@ class TagView(IndexView):
         return super(TagView, self).get_queryset().filter(tags=tag)
 
 
+# 搜索
 def search(request):
     # 获取到用户提交的搜索关键词
     q = request.GET.get('q')
@@ -94,3 +92,58 @@ def search(request):
     post_list = Post.objects.filter(
         Q(title__icontains=q) | Q(body__icontains=q))
     return render(request, 'blog/index.html', {'post_list': post_list})
+
+
+# 写文章的视图
+def post_create(request):
+    # 判断用户是否提交数据
+    if request.method == 'POST':
+        # 将提交的数据赋值到表单实例中
+        post_form = PostForm(data=request.POST)
+        # 判断提交的数据是否满足模型的要求
+        if post_form.is_valid():
+            # 保存数据，但暂时不提交到数据库中
+            new_post = post_form.save(commit=False)
+            # 指定数据库中 id=1 的用户为作者
+            new_post.author = User.objects.get(id=5)
+
+            if request.POST['category'] != 'none':
+                # 保存文章栏目
+                new_post.category = Category.objects.get(id=request.POST['category'])
+
+            # 将新文章保存到数据库中
+            new_post.save()
+            # 完成后返回到文章列表
+            return redirect('blog:index')
+        # 如果数据不合法，返回错误信息
+        else:
+            return HttpResponse("表单内容有误，请重新填写。")
+    # 如果用户请求获取数据
+    else:
+        # 创建表单类实例
+        post_form = PostForm()
+
+        categories = Category.objects.all()
+
+        tags = Tag.objects.all()
+
+        # 赋值上下文
+        context = {'post_form': post_form,
+                   'categories': categories,
+                   'tags': tags}
+        # 返回模板
+        return render(request, 'blog/create.html', context)
+
+
+# 删除文章
+def post_delete(request, id):
+    # 根据 id 获取需要删除的文章
+    post = Post.objects.get(id=id)
+    # 调用.delete()方法删除文章
+    post.delete()
+    # 完成删除后返回文章列表
+    return redirect('blog:index')
+
+
+
+
