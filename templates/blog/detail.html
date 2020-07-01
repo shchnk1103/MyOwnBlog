@@ -19,6 +19,8 @@
 
             <span class="views-count"><a href="#">{{ post_detail.views }} 阅读</a></span>
 
+            <span class="update"><a href="{% url 'blog:update' post_detail.id %}">修改文章</a></span>
+
             <span class="safe-delete"><a href="#" onclick="confirm_safe_delete()">删除文章</a></span>
             
         </div>
