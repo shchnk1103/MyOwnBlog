@@ -135,15 +135,11 @@ def post_create(request):
         return render(request, 'blog/create.html', context)
 
 
-# 删除文章
-def post_delete(request, id):
-    # 根据 id 获取需要删除的文章
-    post = Post.objects.get(id=id)
-    # 调用.delete()方法删除文章
-    post.delete()
-    # 完成删除后返回文章列表
-    return redirect('blog:index')
-
-
-
-
+# 安全删除文章
+def post_safe_delete(request, id):
+    if request.method == "POST":
+        post = Post.objects.get(id=id)
+        post.delete()
+        return redirect('blog:index')
+    else:
+        return HttpResponse("仅允许post请求")

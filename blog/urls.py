@@ -6,7 +6,7 @@ from .views import (IndexView,
                     PostDetailView,
                     search,
                     post_create,
-                    post_delete)
+                    post_safe_delete)
 
 
 app_name = 'blog'
@@ -20,5 +20,5 @@ urlpatterns = [
     path('tags/<int:pk>/', TagView.as_view(), name='tag'),
     path('search/', search, name='search'),
     path('create/', post_create, name='create'),
-    path('delete/<int:id>/', post_delete, name='delete')
+    path('safe-delete/<int:id>/', post_safe_delete, name='safe_delete')
 ]
