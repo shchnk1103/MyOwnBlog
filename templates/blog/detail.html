@@ -19,7 +19,7 @@
 
             <span class="views-count"><a href="#">{{ post_detail.views }} 阅读</a></span>
 
-            <span class="delete"><a href="#" onclick="confirm_safe_delete()">删除文章</a></span>
+            <span class="safe-delete"><a href="#" onclick="confirm_safe_delete()">删除文章</a></span>
             
         </div>
     </header>
@@ -42,7 +42,7 @@
 <form
       style="display:none;"
       id="safe_delete"
-      action="{% url 'blog:delete' post_detail.id %}"
+      action="{% url 'blog:safe_delete' post_detail.id %}"
       method="POST"
       >
     {% csrf_token %}

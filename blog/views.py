@@ -108,7 +108,7 @@ def post_create(request):
             new_post.author = User.objects.get(id=5)
 
             if request.POST['category'] != 'none':
-                # 保存文章栏目
+                # 保存文章分类
                 new_post.category = Category.objects.get(id=request.POST['category'])
 
             # 将新文章保存到数据库中
@@ -143,3 +143,41 @@ def post_safe_delete(request, id):
         return redirect('blog:index')
     else:
         return HttpResponse("仅允许post请求")
+
+
+def post_update(request, id):
+    # 获取需要修改的具体文章对象
+    post = Post.objects.get(id=id)
+    # 判断用户是否为 POST 提交表单数据
+    if request.method == "POST":
+        # 将提交的数据赋值到表单实例中
+        post_form = PostForm(data=request.POST)
+        # 判断提交的数据是否满足模型的要求
+        if post_form.is_valid():
+            # 保存新写入的 title、body 数据并保存
+            post.title = request.POST['title']
+            post.body = request.POST['body']
+            post.save()
+            # 完成后返回到修改后的文章中。需传入文章的 id 值
+            return redirect('blog:detail', pk=id)
+        else:
+            return HttpResponse("表单内容有误，请重新填写。")
+    # 如果用户 GET 请求获取数据
+    else:
+        # 创建表单类实例
+        post_form = PostForm()
+
+        categories = Category.objects.all()
+
+        tags = Tag.objects.all()
+
+        # 赋值上下文，将 post 文章对象也传递进去，以便提取旧的内容
+        context = {'post': post,
+                   'post_form': post_form,
+                   'categories': categories,
+                   'tags': tags
+                   }
+        return render(request, 'blog/update.html', context)
+
+
+
