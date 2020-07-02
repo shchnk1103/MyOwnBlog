@@ -25,7 +25,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70dbbad8-62cd-44db-979f-16bc82812e74" name="Default Changelist" comment="Coverage.py 统计测试覆盖率">
-      <change beforePath="$PROJECT_DIR$/templates/blog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/userprofile/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userprofile/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/userprofile/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +46,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -80,7 +88,7 @@
       <recent name="$USER_HOME$/.local/share/virtualenvs/MyOwnBlog-TUIGxh7F/lib/python3.8/site-packages/django/utils" />
     </key>
   </component>
-  <component name="RunManager" selected="Django tests.Test: blog.tests.test_models.TagModelTestCase.test_str_representation">
+  <component name="RunManager" selected="Django Server.MyOwnBlog">
     <configuration name="Test: blog.tests.test_models.CategoryModelTestCase" type="DjangoTestsConfigurationType" temporary="true">
       <module name="MyOwnBlog" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -189,7 +197,8 @@
       <workItem from="1593515582839" duration="1076000" />
       <workItem from="1593516671435" duration="36000" />
       <workItem from="1593516715905" duration="133000" />
-      <workItem from="1593516857353" duration="13772000" />
+      <workItem from="1593516857353" duration="14643000" />
+      <workItem from="1593652100341" duration="2879000" />
     </task>
     <task id="LOCAL-00001" summary="Coverage.py 统计测试覆盖率">
       <created>1593519024914</created>
@@ -241,10 +250,10 @@
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state width="1398" height="249" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1593516661329" />
-    <state x="292" y="80" key="SettingsEditor" timestamp="1593517053382">
+    <state x="207" y="23" key="SettingsEditor" timestamp="1593652150155">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
-    <state x="292" y="80" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1593517053382" />
+    <state x="207" y="23" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1593652150155" />
     <state x="219" y="112" key="Vcs.Push.Dialog.v2" timestamp="1593519028581">
       <screen x="0" y="23" width="1440" height="826" />
     </state>

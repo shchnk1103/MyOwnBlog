@@ -92,7 +92,26 @@
                             <li class="cl-effect-11"><a href="{% url 'blog:index' %}" data-hover="首页">首页</a></li>
                             <li class="cl-effect-11"><a href="full-width.html" data-hover="博客">博客</a></li>
                             <li class="cl-effect-11"><a href="{% url 'blog:create' %}" data-hover="写文章">写文章</a></li>
-                            <li class="cl-effect-11"><a href="contact.html" data-hover="联系">联系</a></li>
+
+                            <!-- Django的 if 模板语句 -->
+                            {% if user.is_authenticated %}
+                                <!-- 如果用户已经登录，则显示用户名下拉框 -->
+                                <li class="cl-effect-11 dropdown">
+                                    <a class="cl-effect-11 dropdown-toggle" data-hover="{{ user.username }}" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                      {{ user.username }}
+                                    </a>
+                                    <div class="cl-effect-11 dropdown-menu" aria-labelledby="navbarDropdown">
+                                      <a class="cl-effect-11 dropdown-item" data-hover="退出登录" href="{% url 'userprofile:logout' %}">退出登录</a>
+                                    </div>
+                                </li>
+                            <!-- 如果用户未登录，则显示 “登录” -->
+                            {% else %}
+                                <li class="cl-effect-11">
+                                    <a data-hover="登录" class="nav-link" href="{% url 'userprofile:login' %}">登录</a>
+                                </li>
+                            <!-- if 语句在这里结束 -->
+                            {% endif %}
+
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
@@ -110,7 +129,7 @@
     </header>
 </div>
 <div class="copyrights">Collect from <a href="http://www.cssmoban.com/">网页模板</a></div>
-<div class="copyrights">Modified by <a href="http://zmrenwu.com/">追梦人物的博客</a></div>
+<div class="copyrights">Modified by <a href="http://zmrenwu.com/">Oasis的博客</a></div>
 
 <div class="content-body">
     <div class="container">
@@ -144,7 +163,7 @@
             <div class="col-md-12">
                 <p class="copyright">&copy 2017 - 采集自<a href="http://www.cssmoban.com/"
                                                         target="_blank" title="模板之家">模板之家</a>
-                    - 由<a href="http://zmrenwu.com/" title="网页模板" target="_blank">追梦人物的博客</a>修改
+                    - 由<a href="http://zmrenwu.com/" title="网页模板" target="_blank">Oasis的博客</a>修改
                 </p>
             </div>
         </div>
@@ -156,10 +175,10 @@
     <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
     <nav>
         <ul>
-            <li><a href="index.html">首页</a></li>
+            <li><a href="{% url 'blog:index' %}">首页</a></li>
             <li><a href="full-width.html">博客</a></li>
-            <li><a href="about.html">关于</a></li>
-            <li><a href="contact.html">联系</a></li>
+            <li><a href="{% url 'blog:create' %}">写文章</a></li>
+            <li><a href="{% url 'userprofile:login' %}">登录</a></li>
         </ul>
     </nav>
 </div>
