@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "5a160a0dab9ab34612cd9b163900eb166b650ef4481da415fc8909cbb50e7226"
+            "sha256": "e96705fcfe43f7d28c3d505c11aec2d804ac4fe4ffbfe7fc005537482ccc0478"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -70,11 +70,11 @@
         },
         "django": {
             "hashes": [
-                "sha256:5052b34b34b3425233c682e0e11d658fd6efd587d11335a0203d827224ada8f2",
-                "sha256:e1630333248c9b3d4e38f02093a26f1e07b271ca896d73097457996e0fae12e8"
+                "sha256:31a5fbbea5fc71c99e288ec0b2f00302a0a92c44b13ede80b73a6a4d6d205582",
+                "sha256:5457fc953ec560c5521b41fad9e6734a4668b7ba205832191bbdff40ec61073c"
             ],
             "index": "pypi",
-            "version": "==3.0.7"
+            "version": "==3.0.8"
         },
         "django-haystack": {
             "hashes": [
@@ -82,6 +82,14 @@
             ],
             "index": "pypi",
             "version": "==2.8.1"
+        },
+        "django-password-reset": {
+            "hashes": [
+                "sha256:1789b6445d4aec802366625b0facba2ab0b406ac0bfa28d26a5fb29d0f889eee",
+                "sha256:2080621bcd3409bc0d516f0ea147648ccff70cf499e24acde37576842797c4d4"
+            ],
+            "index": "pypi",
+            "version": "==2.0"
         },
         "django-pure-pagination": {
             "hashes": [
@@ -180,12 +188,6 @@
             ],
             "version": "==0.6.1"
         },
-        "public": {
-            "hashes": [
-                "sha256:e1436a8a99693a9849dfe40b9158f3837b7c309c163b2d3f5b8e9fce23876db1"
-            ],
-            "version": "==2019.4.13"
-        },
         "pylint": {
             "hashes": [
                 "sha256:7dd78437f2d8d019717dbf287772d0b2dbdfd13fc016aa7faa08d67bccc46adc",
@@ -234,10 +236,10 @@
         },
         "self": {
             "hashes": [
-                "sha256:1424691f67a308465c791884d1c093d9122d9920ff42a38e21a54f6beefaa1d0"
+                "sha256:c230d5e21fffe2785802d3b4d3fb0b184d29bd0c733d0ddaff3abf8924c84b19"
             ],
             "index": "pypi",
-            "version": "==2019.4.13"
+            "version": "==2020.7.1"
         },
         "six": {
             "hashes": [

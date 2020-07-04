@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'blog.apps.BlogConfig',  # 注册 blog 应用
     'comments.apps.CommentsConfig',  # 注册 comments 应用
     'pure_pagination',  # 分页
-    'userprofile.apps.UserprofileConfig'  # 注册 userprofile 应用
+    'userprofile.apps.UserprofileConfig',  # 注册 userprofile 应用
+    'password_reset',  # 注册 django-password-reset 应用
 ]
 
 MIDDLEWARE = [
@@ -131,6 +132,19 @@ PAGINATION_SETTINGS = {
     'MARGIN_PAGES_DISPLAYED': 2,  # 分页条开头和结尾显示的页数
     'SHOW_FIRST_PAGE_WHEN_INVALID': True,  # 当请求了不存在页，显示第一页
 }
+
+# SMTP服务器
+EMAIL_HOST = 'smtp.qq.com'
+# 改为自己的邮箱名
+EMAIL_HOST_USER = '761962425@qq.com'
+# 你的邮箱密码
+EMAIL_HOST_PASSWORD = 'mvmokpfavxqmbdaj'
+# 发送邮件的端口
+EMAIL_PORT = 587
+# 是否使用 TLS
+EMAIL_USE_TLS = True
+# 默认的发件人
+DEFAULT_FROM_EMAIL = 'shchk的博客 <761962425@qq.com>'
 
 # # 搜索设置
 # HAYSTACK_CONNECTIONS = {

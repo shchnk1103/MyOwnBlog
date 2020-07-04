@@ -22,5 +22,6 @@ urlpatterns = [
     path('', include('blog.urls')),
     path('', include('comments.urls')),
     path('all/rss/', AllPostsRssFeed(), name='rss'),
-    path('userprofile/', include('userprofile.urls'))
+    path('userprofile/', include('userprofile.urls')),
+    path('password-reset/', include('password_reset.urls')),
 ]
