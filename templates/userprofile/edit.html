@@ -4,11 +4,24 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
+            {% if profile.avatar %}
+                <div class="col-md-4">头像</div>
+                <br>
+                <img src="{{ profile.avatar.url }}" style="max-width: 12%; border-radius: 15%;" class="">
+            {% else %}
+                <h5 class="col-md-4">暂无头像</h5>
+            {% endif %}
+            <br>
             <br>
             <div><strong>用户名: {{ user.username }}</strong></div>
             <br>
-            <form method="post" action=".">
+            <form method="post" action="." enctype="multipart/form-data">
                 {% csrf_token %}
+                <!-- avatar -->
+                <div class="form-group">
+                    <label for="avatar">上传头像</label>
+                    <input type="file" class="form-control-file" name="avatar" id="avatar">
+                </div>
                 <!-- phone -->
                 <div class="form-group">
                     <label for="phone">电话</label>

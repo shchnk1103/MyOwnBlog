@@ -146,6 +146,10 @@ EMAIL_USE_TLS = True
 # 默认的发件人
 DEFAULT_FROM_EMAIL = 'shchk的博客 <761962425@qq.com>'
 
+# 媒体文件地址
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
+
 # # 搜索设置
 # HAYSTACK_CONNECTIONS = {
 #     'default': {

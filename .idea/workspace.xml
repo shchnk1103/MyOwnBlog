@@ -25,17 +25,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70dbbad8-62cd-44db-979f-16bc82812e74" name="Default Changelist" comment="Coverage.py 统计测试覆盖率">
-      <change afterPath="$PROJECT_DIR$/templates/userprofile/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blogproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userprofile/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/userprofile/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userprofile/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/userprofile/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userprofile/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/userprofile/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/userprofile/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/userprofile/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/userprofile/edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/userprofile/edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/userprofile/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/userprofile/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -201,7 +195,7 @@
       <workItem from="1593516671435" duration="36000" />
       <workItem from="1593516715905" duration="133000" />
       <workItem from="1593516857353" duration="14643000" />
-      <workItem from="1593652100341" duration="15279000" />
+      <workItem from="1593652100341" duration="16565000" />
     </task>
     <task id="LOCAL-00001" summary="Coverage.py 统计测试覆盖率">
       <created>1593519024914</created>
