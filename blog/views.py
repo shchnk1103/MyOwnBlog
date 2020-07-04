@@ -1,4 +1,5 @@
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
 from django.db.models import Q
 from django.http import HttpResponse
@@ -95,6 +96,7 @@ def search(request):
 
 
 # 写文章的视图
+@login_required(login_url='/userprofile/login/')
 def post_create(request):
     # 判断用户是否提交数据
     if request.method == 'POST':
@@ -105,7 +107,7 @@ def post_create(request):
             # 保存数据，但暂时不提交到数据库中
             new_post = post_form.save(commit=False)
             # 指定数据库中 id=1 的用户为作者
-            new_post.author = User.objects.get(id=5)
+            new_post.author = User.objects.get(id=request.user.id)
 
             if request.POST['category'] != 'none':
                 # 保存文章分类
@@ -136,6 +138,7 @@ def post_create(request):
 
 
 # 安全删除文章
+@login_required(login_url='/userprofile/login/')
 def post_safe_delete(request, id):
     if request.method == "POST":
         post = Post.objects.get(id=id)
@@ -145,6 +148,8 @@ def post_safe_delete(request, id):
         return HttpResponse("仅允许post请求")
 
 
+# 编辑文章
+@login_required(login_url='/userprofile/login/')
 def post_update(request, id):
     # 获取需要修改的具体文章对象
     post = Post.objects.get(id=id)

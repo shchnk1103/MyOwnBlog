@@ -23,6 +23,7 @@ requests = "*"
 elasticsearch = "==2.4.1"
 self = "*"
 django-password-reset = "*"
+pillow = "*"
 
 [requires]
 python_version = "3.8"

@@ -1,9 +1,10 @@
 from django import forms
 
-# 登录表单，继承了 forms.Form 类, 需要手动配置每个字段，它适用于不与数据库进行直接交互的功能
 from django.contrib.auth.models import User
+from .models import Profile
 
 
+# 登录表单，继承了 forms.Form 类, 需要手动配置每个字段，它适用于不与数据库进行直接交互的功能
 class UserLoginForm(forms.Form):
     username = forms.CharField()
     password = forms.CharField()
@@ -26,3 +27,9 @@ class UserRegisterForm(forms.ModelForm):
             return data.get('password')
         else:
             return forms.ValidationError("密码输入不一致,请重试。")
+
+
+class ProfileForm(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ('phone', 'avatar', 'bio')

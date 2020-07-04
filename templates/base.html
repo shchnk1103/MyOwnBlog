@@ -102,6 +102,9 @@
                                     </a>
                                     <div class="cl-effect-11 dropdown-menu">
                                         <div>
+                                            <a class="dropdown-item" href='{% url "userprofile:edit" user.id %}'>个人信息</a>
+                                        </div>
+                                        <div>
                                             <a class="cl-effect-11" href="{% url 'userprofile:logout' %}">退出登录</a>
                                         </div>
                                         <div>
