@@ -178,7 +178,7 @@ CKEDITOR_CONFIGS = {
             ['Maximize']
         ],
         # 加入代码块插件
-        'extraPlugins': ','.join(['codesnippet']),
+        'extraPlugins': ','.join(['codesnippet', 'widget', 'lineutils']),
     }
 }
 

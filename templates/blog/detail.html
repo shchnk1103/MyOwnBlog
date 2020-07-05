@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+{% load static %}
 {% load comments_extras %}
 
 {% block main %}
@@ -22,7 +23,7 @@
             <span class="update"><a href="{% url 'blog:update' post_detail.id %}">修改文章</a></span>
 
             <span class="safe-delete"><a href="#" onclick="confirm_safe_delete()">删除文章</a></span>
-            
+
         </div>
     </header>
 
@@ -40,6 +41,9 @@
       {% show_comments post_detail %}
     </div>
 </section>
+
+<script src="{% static 'ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js' %}"></script>
+<link rel="stylesheet" href="{% static 'ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css' %}">
 
 <form
       style="display:none;"
