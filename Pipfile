@@ -24,6 +24,7 @@ elasticsearch = "==2.4.1"
 self = "*"
 django-password-reset = "*"
 pillow = "*"
+django-ckeditor = "*"
 
 [requires]
 python_version = "3.8"

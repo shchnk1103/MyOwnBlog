@@ -2,9 +2,11 @@
   <dictionary name="oasis">
     <words>
       <w>categoty</w>
+      <w>ckeditor</w>
       <w>markdownify</w>
       <w>modifiled</w>
       <w>smtp</w>
+      <w>whitenoise</w>
     </words>
   </dictionary>
 </component>
