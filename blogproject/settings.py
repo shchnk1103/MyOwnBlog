@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'userprofile.apps.UserprofileConfig',  # 注册 userprofile 应用
     'password_reset',  # 注册 django-password-reset 应用
     'ckeditor',  # 注册 ckeditor 应用
+    'mptt',  # 注册 mptt 应用
 ]
 
 MIDDLEWARE = [

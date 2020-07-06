@@ -5,6 +5,7 @@
       <w>ckeditor</w>
       <w>markdownify</w>
       <w>modifiled</w>
+      <w>mptt</w>
       <w>smtp</w>
       <w>whitenoise</w>
     </words>

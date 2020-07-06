@@ -25,6 +25,7 @@ self = "*"
 django-password-reset = "*"
 pillow = "*"
 django-ckeditor = "*"
+django-mptt = "*"
 
 [requires]
 python_version = "3.8"
