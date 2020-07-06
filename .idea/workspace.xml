@@ -25,9 +25,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70dbbad8-62cd-44db-979f-16bc82812e74" name="Default Changelist" comment="Coverage.py 统计测试覆盖率">
+      <change afterPath="$PROJECT_DIR$/templates/back_to_top_func.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/prism/Creating and Editing Code Snippets.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/prism/Installation Guide.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/prism/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/prism/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/prism/lib/prism/prism_patched.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/prism/plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/blog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/comments/inclusions/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/comments/inclusions/_form.html" afterDir="false" />
     </list>
@@ -194,7 +204,7 @@
       <workItem from="1593516671435" duration="36000" />
       <workItem from="1593516715905" duration="133000" />
       <workItem from="1593516857353" duration="14643000" />
-      <workItem from="1593652100341" duration="21600000" />
+      <workItem from="1593652100341" duration="24418000" />
     </task>
     <task id="LOCAL-00001" summary="Coverage.py 统计测试覆盖率">
       <created>1593519024914</created>

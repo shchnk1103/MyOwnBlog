@@ -24,8 +24,9 @@
 
     <div class="col-md-12" style="width: auto">
         <br>
-        <label for="{{ form.text.id_for_label }}">{{ form.text.label|safe }}：</label>
+        <label for="{{ form.text.id_for_label }}">{{ form.text.label }}：</label>
         <br>
+        {{ form.media }}
         {{ form.text }}
         {{ form.text.errors }}
         <br>

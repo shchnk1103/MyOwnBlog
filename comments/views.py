@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views.decorators.http import require_POST
 from blog.models import Post
@@ -6,6 +7,7 @@ from django.contrib import messages
 
 
 @require_POST
+@login_required(login_url='/userprofile/login/')
 def comment(request, post_pk):
     # 获取被评论的文章
     post = get_object_or_404(Post, pk=post_pk)
