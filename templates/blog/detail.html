@@ -34,9 +34,17 @@
 </article>
 
 <section class="comment-area" id="comment-area">
-    <hr>
-    <h3>发表评论</h3>
-    {% show_comment_form post_detail %}
+    {% if user.is_authenticated %}
+        <hr>
+        <h3>发表评论</h3>
+        {% show_comment_form post_detail %}
+    {% else %}
+        <br>
+        <h5 class="row justify-content-center">
+            请<a href="{% url 'userprofile:login' %}">登录</a>后回复
+        </h5>
+        <br>
+    {% endif %}
     <div class="comment-list-panel">
       {% show_comments post_detail %}
     </div>

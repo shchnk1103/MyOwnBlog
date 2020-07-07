@@ -3,7 +3,7 @@ from .models import Comment
 
 
 class CommentAdmin(admin.ModelAdmin):
-    list_display = ['name', 'email', 'url', 'post', 'created_time']
+    list_display = ['post', 'created_time']
     exclude = ['created_time']
 
 

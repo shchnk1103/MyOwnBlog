@@ -7,14 +7,14 @@ from mptt.models import MPTTModel, TreeForeignKey
 
 
 class Comment(MPTTModel):
-    name = models.CharField('姓名', max_length=50)
-    email = models.EmailField('邮箱')
-    url = models.URLField('网址', blank=True)
     text = RichTextField('内容')
     created_time = models.DateTimeField('创建时间', default=timezone.now)
     post = models.ForeignKey(Post,
                              on_delete=models.CASCADE,
                              verbose_name='文章')
+    user = models.ForeignKey(User,
+                             on_delete=models.CASCADE,
+                             verbose_name='用户名')
 
     # 新增，mptt树形结构
     # parent字段是必须定义的，用于存储数据之间的关系，不要去修改它
@@ -45,4 +45,4 @@ class Comment(MPTTModel):
         order_insertion_by = ['-created_time']
 
     def __str__(self):
-        return '{}: {}'.format(self.name, self.text[:20])
+        return self.text[:20]

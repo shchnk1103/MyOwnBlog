@@ -25,16 +25,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70dbbad8-62cd-44db-979f-16bc82812e74" name="Default Changelist" comment="Coverage.py 统计测试覆盖率">
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/oasis.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/oasis.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pipfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Pipfile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/comments/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/forms.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/comments/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/blog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/comments/inclusions/_form.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/comments/inclusions/_form.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/comments/inclusions/_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/comments/inclusions/_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/comments/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/comments/preview.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +199,7 @@
       <workItem from="1593516671435" duration="36000" />
       <workItem from="1593516715905" duration="133000" />
       <workItem from="1593516857353" duration="14643000" />
-      <workItem from="1593652100341" duration="28423000" />
+      <workItem from="1593652100341" duration="30665000" />
     </task>
     <task id="LOCAL-00001" summary="Coverage.py 统计测试覆盖率">
       <created>1593519024914</created>
